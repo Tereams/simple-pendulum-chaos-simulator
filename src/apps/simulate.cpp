@@ -2,10 +2,14 @@
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
+#include <fstream>
+#include <filesystem>
+#include <string>
+#include <cmath>
 #include "core/SinglePendulum.hpp"
 #include "core/RK4.hpp"
 
-int main() {
+int main(int argc, char** argv) {
     using namespace pc;
 
     // Parse command-line argument: output file path (optional)
